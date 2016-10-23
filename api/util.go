@@ -6,7 +6,7 @@ import (
 	protos "github.com/pogodevorg/POGOProtos-go"
 )
 
-const hashSeed = uint64(0x1B845238) // Static xxhash seed
+const hashSeed = uint64(0x61247FBF) // Static xxhash seed
 
 func protoToXXHash64(seed uint64, pb proto.Message) (uint64, error) {
 	h := xxhash.NewS64(seed)
