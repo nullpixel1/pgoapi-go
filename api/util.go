@@ -7,6 +7,7 @@ import (
 )
 
 const hashSeed = uint64(0x61247FBF) // Static xxhash seed
+const addr = uint64(0x1000)
 
 func protoToXXHash64(seed uint64, pb proto.Message) (uint64, error) {
 	h := xxhash.NewS64(seed)
